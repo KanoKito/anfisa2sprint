@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}404 - Страница не найдена{% endblock %}
+
+{% block content %}
+  <div class="text-center">
+    <h1 class="display-4">404</h1>
+    <p class="lead">Страница, которую вы ищете, не существует.</p>
+    <p>
+      <a href="{% url 'homepage:index' %}" class="btn btn-primary">
+        Вернуться на главную
+      </a>
+    </p>
+  </div>
+{% endblock %}
